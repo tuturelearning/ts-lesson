@@ -1,6 +1,3 @@
-// 返回一个Button组件
-// 接受children，color = tomato，click
-// props: color可以不存在，默认为tomato
 import React from 'react';
 
 type Props = {
