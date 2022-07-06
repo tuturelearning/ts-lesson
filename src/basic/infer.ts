@@ -13,3 +13,6 @@ type getPromiseType3 = getInferType<Promise<number>>;
 type getFnType = getInferType<(x: number) => string>;
 type getFnType2 = getInferType<() => number>;
 type getType = getInferType<string>
+
+// FirstIsString
+type FirstIsString<T> = T extends [infer S extends string, ...unknown[]] ? S : never;;
